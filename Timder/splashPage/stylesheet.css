@@ -1,0 +1,44 @@
+html {
+    background: url(background.jpg) no-repeat left center fixed;
+    background-color: black;
+    -webkit-background-size: contain;
+    /*-moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+
+}
+body.container {
+    background-color: transparent;
+    max-width: 95%;
+}
+
+#timder {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    color: white;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: right;
+
+}
+
+.abstract {
+    color: white;
+    font-size: 110px;
+    padding-bottom: 50px;
+    width: 500px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    margin: auto;
+}
