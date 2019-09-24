@@ -15,7 +15,16 @@ h1 {
 .btn-outline-success{
   float: right;
 }
-.location {
-  display: inline;
-  align: right;
+.modal-title{
+    margin: auto;
+}
+.modal-footer {
+    margin: auto;
+}
+.btnModal {
+    margin-left: 25px !important;
+}
+#gayTim {
+    margin: auto;
+    border-radius: 50%;
 }
