@@ -20,9 +20,9 @@ $( document ).ready(function() {
     var profileName = profiles[randomIndex].name;
 
 	// Enter folder of randomly selected profile for images
-	$('img.picture1').attr('src', randomProfile+'/1.jpg');
-	$('img.picture2').attr('src', randomProfile+'/2.jpg');
-	$('img.picture3').attr('src', randomProfile+'/3.jpg');
+	$('img.picture1').attr('src', 'Timder/profiles/'+randomProfile+'/1.jpg');
+	$('img.picture2').attr('src', 'Timder/profiles/'+randomProfile+'/2.jpg');
+	$('img.picture3').attr('src', 'Timder/profiles/'+randomProfile+'/3.jpg');
 
     // Display bio and name of corresponding profile
     $('.bioInfo').text(bioText);
