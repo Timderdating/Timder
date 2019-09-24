@@ -9,5 +9,8 @@ $( document ).ready(function() {
     	if (e.which === 39) {
     		$(".likeBtn").trigger( "click" );
     	}
+        else if (e.which === 37) {
+            $(".likeBtn").trigger( "click" );
+        }
     });
 });
