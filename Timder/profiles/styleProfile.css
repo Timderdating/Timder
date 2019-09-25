@@ -15,16 +15,54 @@ h1 {
 .btn-outline-success{
   float: right;
 }
+.modal-content {
+  background-color: black;
+}
+.animated{
+
+}
+.modal-header {
+  border-bottom: none;
+}
 .modal-title{
-    margin: auto;
+  width: 265px;
+  font-size: 40px;
+  margin: auto;
+  background:linear-gradient(to right, #42fc3f, #08eaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.modal-body {
+  border-bottom: none;
+  box-sizing: none;
+}
+.modal-body p{
+  text-align: justify;
+  width: 320px;
+  color: white;
+  margin: auto;
 }
 .modal-footer {
-    margin: auto;
+  margin: auto;
+  border-top: none;
+  padding-top: 25px;
 }
 .btnModal {
-    margin-left: 25px !important;
+  margin-left: 25px !important;
+  border: none;
 }
 #gayTim {
-    margin: auto;
-    border-radius: 50%;
+  border: double 4px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at left, #42fc3f, #08eaff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  width: 35%;
+  margin: auto;
+  /*border-radius: 50%;
+  margin-top: 10px;
+  border: 6px solid;
+  border-image-source: linear-gradient(to right, #42fc3f, #08eaff);
+  border-image-slice: 1;*/
 }
+
