@@ -1,7 +1,6 @@
 html {
     /*background-color: #63787d;*/
-    background: url(rose.jpg) no-repeat left center fixed;
-    background-color: black;
+    background: url(rose.jpg) no-repeat center fixed;
     -webkit-background-size: contain;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,24 +16,31 @@ body.container {
     padding-top: 10px;
     padding-bottom: 40px;
     color: white;
-    margin-left: auto;
+    margin: auto;
     width: 250px;
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 60px;
-    text-align: right;
+    text-align: center;
     /*background:linear-gradient(to right, #42fc3f, #08eaff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
 
 }
-
 .abstract {
     color: white;
     font-size: 50px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 119px;
+    margin-top: 0px;
+    text-shadow: 5px 4px 4px black;
+}
+#love{
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+    font-size: 29px;
+    text-shadow: 3px 3px 3px black;
 }
 
