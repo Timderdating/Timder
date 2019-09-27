@@ -54,6 +54,7 @@ $( document ).ready(function() {
     // Dislike Button
     $(".dislikeBtn").on('click', function() {
         generateProfile();
+        $('.mainProfileCard').addClass('fadeOutLeft');
     });
 
     $("body").keydown(function(e) {
