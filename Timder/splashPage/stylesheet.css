@@ -1,10 +1,11 @@
 html {
-    background: url(background.jpg) no-repeat left center fixed;
+    /*background-color: #63787d;*/
+    background: url(rose.jpg) no-repeat left center fixed;
     background-color: black;
     -webkit-background-size: contain;
-    /*-moz-background-size: cover;
+    -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
+    background-size: cover;
 
 }
 body.container {
@@ -16,29 +17,24 @@ body.container {
     padding-top: 10px;
     padding-bottom: 40px;
     color: white;
-    margin: auto;
+    margin-left: auto;
+    width: 250px;
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 60px;
     text-align: right;
+    /*background:linear-gradient(to right, #42fc3f, #08eaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
 
 }
 
 .abstract {
     color: white;
-    font-size: 110px;
-    padding-bottom: 50px;
-    width: 500px;
-    margin: auto;
-    text-transform: uppercase;
-}
-
-.wrapper {
+    font-size: 50px;
     text-align: center;
+    text-transform: uppercase;
+    margin-top: 119px;
 }
 
-form {
-    width: 500px;
-    margin: auto;
-}
