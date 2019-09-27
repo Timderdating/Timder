@@ -18,6 +18,8 @@ $( document ).ready(function() {
         'bio': 'boobgogi is my favorite.'
     }];
 
+    var originalProfileList = JSON.parse(JSON.stringify(profiles));
+
     function generateProfile(){
         // Randomly select a profile
         var randomIndex = Math.floor((Math.random() * profiles.length));
@@ -33,6 +35,12 @@ $( document ).ready(function() {
         // Display bio and name of corresponding profile
         $('.bioInfo').text(bioText);
         $('.profName').text(profileName);
+
+        // Remove profile from list to generate
+        profiles.splice(randomIndex, 1);
+        if( profiles.length == 0){
+            profiles = JSON.parse(JSON.stringify(originalProfileList));
+        }
     }
 
     // When document loads, generate a random profile
