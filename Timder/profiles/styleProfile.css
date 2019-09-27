@@ -1,5 +1,6 @@
 .container {
-  background:linear-gradient(to right, #f5f5f5, #545454);
+  /* background:linear-gradient(to right, #f5f5f5, #545454); */
+  background-color: #63787d;
   /*-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;*/
 }
@@ -77,4 +78,8 @@ h1 {
   border-image-source: linear-gradient(to right, #42fc3f, #08eaff);
   border-image-slice: 1;*/
 }
-
+.timderText {
+  position: relative;
+  right: 35px;
+  bottom: 7px;
+}
