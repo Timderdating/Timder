@@ -55,6 +55,10 @@ $( document ).ready(function() {
     $(".dislikeBtn").on('click', function() {
         generateProfile();
         $('.mainProfileCard').addClass('fadeOutLeft');
+        setTimeout(function(){ 
+            $('.mainProfileCard').removeClass('fadeOutLeft'); 
+            $('.mainProfileCard').addClass('fadeInLeft');
+        }, 750);
     });
 
     $("body").keydown(function(e) {
