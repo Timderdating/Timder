@@ -5,17 +5,27 @@ $( document ).ready(function() {
     var profiles = [{
         'folder': 'normal_tim',
         'name': 'Tim Huynh',
-        'bio': "You already know he's a bitch."
+        'bio': "I make aggressively medium bank."
     },
     {
         'folder': 'nerdy_tim',
         'name': 'Nerdy Tim',
-        'bio': 'e=mc2, u = arqt'
+        'bio': "If you were a triangle you'd be acute one."
+    },
+    {
+        'folder': 'tiny_tim',
+        'name': 'Tiny Tim',
+        'bio': "God bless us! Every one!"
+    },
+    {
+        'folder': 'turner_tim',
+        'name': 'Timmy Turner',
+        'bio': "Timmy is an average kid and no one understands. Mom and dad and Vicky always giving him commands."
     },
     {
         'folder': 'kpop_tim',
-        'name': 'cumsomemeda',
-        'bio': 'boobgogi is my favorite.'
+        'name': '티모시',
+        'bio': "I'm so sick of this fake love."
     }];
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
