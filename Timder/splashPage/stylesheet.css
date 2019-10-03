@@ -15,9 +15,9 @@ body.container {
 #logo {
     margin: auto;
     width: 33%;
-    padding-top: 20px;
-    padding-left: 41px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 27px;
+    padding-bottom: 40px;
 }
 p {
     font-size: 20px;
@@ -32,5 +32,37 @@ p {
     width: 40%;
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-
+.btn  {
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    width: 224px;
+    margin-top: 25px;
+    }
+@media only screen and (max-width: 375px) {
+    #logo {
+        margin: auto;
+        width: 33%;
+        padding-top: 30px;
+        padding-left: 41px;
+        position: relative;
+        right: 100px;
+        padding-bottom: 40px
+    }
+    .textBox {
+        border-color: white;
+        border-radius: 5px;
+        background-color: white;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
