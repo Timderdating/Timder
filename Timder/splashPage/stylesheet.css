@@ -1,10 +1,10 @@
 html {
-    /*background-color: #63787d;*/
-    background: url(rose.jpg) no-repeat center fixed;
+    background-color: #63787d;
+    /*background: url(rose.jpg) no-repeat center fixed;
     -webkit-background-size: contain;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
 
 }
 body.container {
@@ -12,35 +12,25 @@ body.container {
     max-width: 95%;
 }
 
-#timder {
-    padding-top: 10px;
-    padding-bottom: 40px;
-    color: white;
+#logo {
     margin: auto;
-    width: 250px;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-    /*background:linear-gradient(to right, #42fc3f, #08eaff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
-
+    width: 33%;
+    padding-top: 20px;
+    padding-left: 41px;
+    padding-bottom: 30px;
 }
-.abstract {
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 0px;
-    text-shadow: 5px 4px 4px black;
+p {
+    font-size: 20px;
+    color: #63787d;
 }
-#love{
-    color: white;
+.textBox {
+    border-color: white;
+    border-radius: 5px;
+    background-color: white;
+    margin: auto;
     text-align: center;
-    margin-top: 120px;
-    font-size: 29px;
-    text-shadow: 3px 3px 3px black;
+    width: 40%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
