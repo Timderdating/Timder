@@ -63,11 +63,11 @@ $( document ).ready(function() {
 
     // Dislike Button
     $(".dislikeBtn").on('click', function() {
-        generateProfile();
         $('.mainProfileCard').addClass('fadeOutLeft');
         setTimeout(function(){ 
             $('.mainProfileCard').removeClass('fadeOutLeft'); 
-            $('.mainProfileCard').addClass('fadeInLeft');
+            generateProfile();
+            $('.mainProfileCard').addClass('fadeIn');
         }, 750);
     });
 
