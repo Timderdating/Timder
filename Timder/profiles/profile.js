@@ -58,14 +58,35 @@ $( document ).ready(function() {
 
     // Like Button
     $(".likeBtn").on('click', function() {
-        $('#likeModal').modal('show');
+        var randomNumber = Math.floor((Math.random() * 3) + 1);
+        if (randomNumber == 2){
+            console.log("randomNumber:"+ randomNumber)
+            $('#likeModal').modal('show');
+        } else {
+            $('.mainProfileCard').addClass('fadeOutRight');
+             setTimeout(function(){
+                $('.mainProfileCard').removeClass('fadeOutRight');
+                generateProfile();
+                $('.mainProfileCard').addClass('fadeIn');
+            }, 750);
+        }
+    });
+
+    // NVM Button on the Modal
+    $(".nvmBtn").on('click', function() {
+        $('.mainProfileCard').addClass('fadeOutRight');
+        setTimeout(function(){
+            $('.mainProfileCard').removeClass('fadeOutRight');
+            generateProfile();
+            $('.mainProfileCard').addClass('fadeIn');
+        }, 750);
     });
 
     // Dislike Button
     $(".dislikeBtn").on('click', function() {
         $('.mainProfileCard').addClass('fadeOutLeft');
-        setTimeout(function(){ 
-            $('.mainProfileCard').removeClass('fadeOutLeft'); 
+        setTimeout(function(){
+            $('.mainProfileCard').removeClass('fadeOutLeft');
             generateProfile();
             $('.mainProfileCard').addClass('fadeIn');
         }, 750);
