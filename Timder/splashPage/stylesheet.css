@@ -30,7 +30,7 @@ p {
 .textBox {
     border-color: white;
     border-radius: 5px;
-    background-color: white;
+    /* background-color: white; */
     margin: auto;
     text-align: center;
     width: 40%;
@@ -47,6 +47,14 @@ p {
     padding-top: 1px;
     width: 224px;
     margin-top: 25px;
+}
+
+.splashText {
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 800;
 }
 
 /* Background Circles CSS */
@@ -147,7 +155,7 @@ p {
     .textBox {
         border-color: white;
         border-radius: 5px;
-        background-color: white;
+        /* background-color: white; */
         margin: auto;
         text-align: center;
         width: 90%;
