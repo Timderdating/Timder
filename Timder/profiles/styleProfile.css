@@ -50,11 +50,12 @@ h1 {
   border-bottom: none;
   box-sizing: none;
 }
-.modal-body p{
-  text-align: justify;
+.modal-body p {
+  text-align: center;
   width: 320px;
   color: white;
   margin: auto;
+
 }
 .modal-footer {
   margin: auto;

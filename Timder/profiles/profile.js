@@ -26,6 +26,16 @@ $( document ).ready(function() {
         'folder': 'kpop_tim',
         'name': '티모시',
         'bio': "I'm so sick of this fake love."
+    },
+    {
+        'folder': 'bat_tim',
+        'name': 'BatTim',
+        'bio': "Patrolling the streets of Gotham gets so lonely."
+    },
+    {
+        'folder': 'mormon_tim',
+        'name': 'Mormon Tim',
+        'bio': "I read through the book of Numbers and I realized I didn't have yours."
     }];
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
