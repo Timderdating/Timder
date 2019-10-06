@@ -36,6 +36,26 @@ $( document ).ready(function() {
         'folder': 'mormon_tim',
         'name': 'Mormon Tim',
         'bio': "I read through the book of Numbers and I realized I didn't have yours."
+    },
+    {
+        'folder': 'elf_tim',
+        'name': 'Elf Tim',
+        'bio': "I'll let Santa know if you're naughty or nice"
+    },
+    {
+        'folder': 'hostage_tim',
+        'name': 'Hostage Tim',
+        'bio': "For the love of God please like! He's not gonna let me go! I haven't had rice in days!!"
+    },
+    {
+        'folder': 'tool_tim',
+        'name': "Tim 'the Tool Man' Taylor",
+        'bio': "I heard your heart's broken, I can fix that."
+    },
+    {
+        'folder': 'yugi_tim',
+        'name': "Tim Kaiba",
+        'bio': "They don't call me Lord of D. for nothing."
     }];
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
