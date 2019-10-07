@@ -1,14 +1,32 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
-
-    // Nested profile array
-    var profiles = [{
+    //First Profile
+    var firstProfile = [{
         'folder': 'normal_tim',
         'name': 'Tim Huynh',
         'career': 'Web Developer',
         'bio': "I make aggressively medium bank."
-    },
-    {
+    }];
+
+    // Generate first profile
+    function originalProfile(){
+        var profileOne = firstProfile.folder;
+        var bioText = firstProfile.bio;
+        var profileName = firstProfile.name;
+        var career = firstProfile.career;
+
+        // Enter folder of randomly selected profile for images
+        $('img.picture1').attr('src', 'Timder/profiles/'+profileOne+'/1.jpg');
+        $('img.picture2').attr('src', 'Timder/profiles/'+profileOne+'/2.jpg');
+        $('img.picture3').attr('src', 'Timder/profiles/'+profileOne+'/3.jpg');
+
+        // Display bio and name of corresponding profile
+        $('.bioInfo').text(bioText);
+        $('.profName').text(profileName);
+        $('.career').text(career);
+    }
+    // Nested profile array
+    var profiles = [{
         'folder': 'nerdy_tim',
         'name': 'Nerdy Tim',
         'career': 'Lvl 69 Dark Mage',
@@ -71,6 +89,7 @@ $( document ).ready(function() {
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
 
+    // Generate other Profiles
     function generateProfile(){
         // Randomly select a profile
         var randomIndex = Math.floor((Math.random() * profiles.length));
