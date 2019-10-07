@@ -66,8 +66,12 @@ h1 {
   font-size: 1.3rem;
 }
 .btnModal {
-  margin-left: 25px !important;
+  margin-left: 20px !important;
   border: none;
+  width: 72px;
+}
+#fbBtn {
+  margin-left: 0px !important;
 }
 #gayTim {
   border: double 4px transparent;
