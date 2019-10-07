@@ -88,7 +88,7 @@ $( document ).ready(function() {
 
     // Like Button
     $(".likeBtn").on('click', function() {
-        var randomNumber = Math.floor((Math.random() * 3) + 1);
+        var randomNumber = Math.floor((Math.random() * 5) + 1);
         if (randomNumber == 2){
             console.log("randomNumber:"+ randomNumber)
             $('#likeModal').modal('show');
