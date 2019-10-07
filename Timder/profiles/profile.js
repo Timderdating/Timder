@@ -10,10 +10,10 @@ $( document ).ready(function() {
 
     // Generate first profile
     function originalProfile(){
-        var profileOne = firstProfile.folder;
-        var bioText = firstProfile.bio;
-        var profileName = firstProfile.name;
-        var career = firstProfile.career;
+        var profileOne = firstProfile[0].folder;
+        var bioText = firstProfile[0].bio;
+        var profileName = firstProfile[0].name;
+        var career = firstProfile[0].career;
 
         // Enter folder of randomly selected profile for images
         $('img.picture1').attr('src', 'Timder/profiles/'+profileOne+'/1.jpg');
@@ -25,6 +25,7 @@ $( document ).ready(function() {
         $('.profName').text(profileName);
         $('.career').text(career);
     }
+
     // Nested profile array
     var profiles = [{
         'folder': 'nerdy_tim',
@@ -117,7 +118,10 @@ $( document ).ready(function() {
     }
 
     // When document loads, generate a random profile
-    generateProfile();
+    // generateProfile();
+
+    // When document loads, generate the original Tim profile
+    originalProfile();
 
     // Like Button
     $(".likeBtn").on('click', function() {
