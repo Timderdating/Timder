@@ -29,7 +29,7 @@ $( document ).ready(function() {
     },
     {
         'folder': 'bat_tim',
-        'name': 'BatTim',
+        'name': 'Bat Tim',
         'bio': "Patrolling the streets of Gotham gets so lonely."
     },
     {
@@ -88,7 +88,7 @@ $( document ).ready(function() {
 
     // Like Button
     $(".likeBtn").on('click', function() {
-        var randomNumber = Math.floor((Math.random() * 5) + 1);
+        var randomNumber = Math.floor((Math.random() * 10) + 1);
         if (randomNumber == 2){
             console.log("randomNumber:"+ randomNumber)
             $('#likeModal').modal('show');
