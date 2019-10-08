@@ -26,25 +26,24 @@ $( document ).ready(function() {
         $('.career').text(career);
     }
 
-<<<<<<< HEAD
     // Last Profile
     var lastProfile = [{
-        'folder': 'last-profile',
+        'folder': 'last_profile',
         'name': 'Saddness',
         'career': 'Being lonely',
         'bio': "You've reached the end. There aren't anymore fish in this pond. I hope you found someone you liked. If you didn't, then keep your standards high! You deserve the best, never settle for a Magikarp when you can catch a Gyarados!"
     }];
 
-    function lasProfile(){
-        var profileOne = firstProfile.folder;
-        var bioText = firstProfile.bio;
-        var profileName = firstProfile.name;
-        var career = firstProfile.career;
+    function profileLast(){
+        var profileEnd = lastProfile[0].folder;
+        var bioText = lastProfile[0].bio;
+        var profileName = lastProfile[0].name;
+        var career = lastProfile[0].career;
 
         // Enter folder of randomly selected profile for images
-        $('img.picture1').attr('src', 'Timder/profiles/'+profileOne+'/1.jpg');
-        $('img.picture2').attr('src', 'Timder/profiles/'+profileOne+'/2.jpg');
-        $('img.picture3').attr('src', 'Timder/profiles/'+profileOne+'/3.jpg');
+        $('img.picture1').attr('src', 'Timder/profiles/'+profileEnd+'/1.jpg');
+        $('img.picture2').attr('src', 'Timder/profiles/'+profileEnd+'/2.jpg');
+        $('img.picture3').attr('src', 'Timder/profiles/'+profileEnd+'/3.jpg');
 
         // Display bio and name of corresponding profile
         $('.bioInfo').text(bioText);
@@ -52,8 +51,6 @@ $( document ).ready(function() {
         $('.career').text(career);
     }
 
-=======
->>>>>>> 46ecf91984bc81731104db96ac6ab3790fed557d
     // Nested profile array
     var profiles = [{
         'folder': 'nerdy_tim',
@@ -141,7 +138,8 @@ $( document ).ready(function() {
         // Remove profile from list to generate
         profiles.splice(randomIndex, 1);
         if( profiles.length == 0){
-            profiles = JSON.parse(JSON.stringify(originalProfileList));
+            profilelast()
+            //profiles = JSON.parse(JSON.stringify(originalProfileList));
         }
     }
 
