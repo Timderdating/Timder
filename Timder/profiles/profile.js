@@ -25,6 +25,32 @@ $( document ).ready(function() {
         $('.profName').text(profileName);
         $('.career').text(career);
     }
+
+    // Last Profile
+    var lastProfile = [{
+        'folder': 'last-profile',
+        'name': 'Saddness',
+        'career': 'Being lonely',
+        'bio': "You've reached the end. There aren't anymore fish in this pond. I hope you found someone you liked. If you didn't, then keep your standards high! You deserve the best, never settle for a Magikarp when you can catch a Gyarados!"
+    }];
+
+    function lasProfile(){
+        var profileOne = firstProfile.folder;
+        var bioText = firstProfile.bio;
+        var profileName = firstProfile.name;
+        var career = firstProfile.career;
+
+        // Enter folder of randomly selected profile for images
+        $('img.picture1').attr('src', 'Timder/profiles/'+profileOne+'/1.jpg');
+        $('img.picture2').attr('src', 'Timder/profiles/'+profileOne+'/2.jpg');
+        $('img.picture3').attr('src', 'Timder/profiles/'+profileOne+'/3.jpg');
+
+        // Display bio and name of corresponding profile
+        $('.bioInfo').text(bioText);
+        $('.profName').text(profileName);
+        $('.career').text(career);
+    }
+
     // Nested profile array
     var profiles = [{
         'folder': 'nerdy_tim',
