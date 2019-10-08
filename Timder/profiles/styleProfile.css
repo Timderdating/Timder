@@ -92,4 +92,7 @@ h1 {
   right: 35px;
   bottom: -2px;
 }
+.displayNone {
+    display: none;
+}
 

@@ -15,6 +15,9 @@ $( document ).ready(function() {
         var profileName = firstProfile[0].name;
         var career = firstProfile[0].career;
 
+        // Hide Restart Button
+        $('.restartBtn').addClass('displayNone');
+
         // Enter folder of randomly selected profile for images
         $('img.picture1').attr('src', 'Timder/profiles/'+profileOne+'/1.jpg');
         $('img.picture2').attr('src', 'Timder/profiles/'+profileOne+'/2.jpg');
@@ -29,8 +32,8 @@ $( document ).ready(function() {
     // Last Profile
     var lastProfile = [{
         'folder': 'last_profile',
-        'name': 'Saddness',
-        'career': 'Being lonely',
+        'name': 'Sadness',
+        'career': 'Loneliness',
         'bio': "You've reached the end. There aren't anymore fish in this pond. I hope you found someone you liked. If you didn't, then keep your standards high! You deserve the best, never settle for a Magikarp when you can catch a Gyarados!"
     }];
 
@@ -39,12 +42,13 @@ $( document ).ready(function() {
         var bioText = lastProfile[0].bio;
         var profileName = lastProfile[0].name;
         var career = lastProfile[0].career;
+        //$('#carouselExampleIndicators').addClass('displayNone');
+        $('.noBtn').addClass('displayNone');
 
-        // Enter folder of randomly selected profile for images
+        // Last Picture
         $('img.picture1').attr('src', 'Timder/profiles/'+profileEnd+'/1.jpg');
         $('img.picture2').attr('src', 'Timder/profiles/'+profileEnd+'/2.jpg');
         $('img.picture3').attr('src', 'Timder/profiles/'+profileEnd+'/3.jpg');
-
         // Display bio and name of corresponding profile
         $('.bioInfo').text(bioText);
         $('.profName').text(profileName);
@@ -63,7 +67,7 @@ $( document ).ready(function() {
         'name': 'Tiny Tim',
         'career': 'Orphan',
         'bio': "God bless us! Every one!"
-    },
+    }]/*,
     {
         'folder': 'turner_tim',
         'name': 'Timmy Turner',
@@ -111,7 +115,7 @@ $( document ).ready(function() {
         'name': "Tim Kaiba",
         'career': 'Duel Master',
         'bio': "They don't call me Lord of D. for nothing."
-    }];
+    }]*/;
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
 
@@ -123,7 +127,7 @@ $( document ).ready(function() {
         var bioText = profiles[randomIndex].bio;
         var profileName = profiles[randomIndex].name;
         var career = profiles[randomIndex].career;
-
+        $('.restartBtn').addClass('displayNone');
         // Enter folder of randomly selected profile for images
         $('img.picture1').attr('src', 'Timder/profiles/'+randomProfile+'/1.jpg');
         $('img.picture2').attr('src', 'Timder/profiles/'+randomProfile+'/2.jpg');
@@ -138,7 +142,8 @@ $( document ).ready(function() {
         // Remove profile from list to generate
         profiles.splice(randomIndex, 1);
         if( profiles.length == 0){
-            profilelast()
+            console.log("Last profile generated");
+            profileLast();
             //profiles = JSON.parse(JSON.stringify(originalProfileList));
         }
     }
