@@ -16,7 +16,7 @@ $( document ).ready(function() {
         var career = firstProfile[0].career;
 
         // Hide Restart Button
-        $('.restartBtn').addClass('displayNone');
+        //$('.restartBtn').addClass('displayNone');
 
         // Enter folder of randomly selected profile for images
         $('img.picture1').attr('src', 'Timder/profiles/'+profileOne+'/1.jpg');
@@ -127,7 +127,7 @@ $( document ).ready(function() {
         var bioText = profiles[randomIndex].bio;
         var profileName = profiles[randomIndex].name;
         var career = profiles[randomIndex].career;
-        $('.restartBtn').addClass('displayNone');
+        //$('.restartBtn').addClass('displayNone');
         // Enter folder of randomly selected profile for images
         $('img.picture1').attr('src', 'Timder/profiles/'+randomProfile+'/1.jpg');
         $('img.picture2').attr('src', 'Timder/profiles/'+randomProfile+'/2.jpg');
@@ -153,6 +153,11 @@ $( document ).ready(function() {
 
     // When document loads, generate the original Tim profile
     originalProfile();
+
+    // Restart Button
+    $(".restartBtn").on('click', function() {
+        originalProfileList()
+    });
 
     // Like Button
     $(".likeBtn").on('click', function() {
