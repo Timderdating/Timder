@@ -57,6 +57,25 @@ p {
     font-weight: 800;
 }
 
+.sliderText {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 35px;
+}
+
+.splashBtn {
+    border: 1px solid #fff !important;
+    background: #fff !important;
+    color: #24bdc9 !important;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    height: 60px;
+}
+
 /* Background Circles CSS */
 .hero-wrap {
   width: 100%;
