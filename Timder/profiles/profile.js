@@ -70,7 +70,7 @@ $( document ).ready(function() {
         'name': 'Tiny Tim',
         'career': 'Orphan',
         'bio': "God bless us! Every one!"
-    }]/*,
+    },
     {
         'folder': 'turner_tim',
         'name': 'Timmy Turner',
@@ -118,7 +118,7 @@ $( document ).ready(function() {
         'name': "Tim Kaiba",
         'career': 'Duel Master',
         'bio': "They don't call me Lord of D. for nothing."
-    }]*/;
+    }];
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
 
