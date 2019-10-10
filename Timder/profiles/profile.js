@@ -45,6 +45,7 @@ $( document ).ready(function() {
         $('.carousel-item').addClass('short');
         $('.noBtn').hide();
         $('.restartBtn').show();
+        $('.tryWrapper').show();
         $('.restartBtn').addClass('restartCtr');
 
         // Last Picture
@@ -159,6 +160,7 @@ $( document ).ready(function() {
         console.log('profiles.length: '+ profiles.length);
         generateProfile();
         $('.restartBtn').hide();
+        $('.tryWrapper').show();
         $('.noBtn').show();
     }
 

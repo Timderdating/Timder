@@ -102,3 +102,6 @@ h1 {
   display: block;
   margin: auto;
 }
+.tryWrapper{
+  text-align: center;
+}
