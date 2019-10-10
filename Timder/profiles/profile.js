@@ -123,13 +123,19 @@ $( document ).ready(function() {
 
     // Generate other Profiles
     function generateProfile(){
+        if( profiles.length == 0){
+            console.log("Last profile generated");
+            profileLast();
+            //profiles = JSON.parse(JSON.stringify(originalProfileList));
+        }
+
         // Randomly select a profile
         var randomIndex = Math.floor((Math.random() * profiles.length));
         var randomProfile = profiles[randomIndex].folder;
         var bioText = profiles[randomIndex].bio;
         var profileName = profiles[randomIndex].name;
         var career = profiles[randomIndex].career;
-        //$('.restartBtn').addClass('displayNone');
+
         // Enter folder of randomly selected profile for images
         $('img.picture1').attr('src', 'Timder/profiles/'+randomProfile+'/1.jpg');
         $('img.picture2').attr('src', 'Timder/profiles/'+randomProfile+'/2.jpg');
@@ -143,11 +149,15 @@ $( document ).ready(function() {
 
         // Remove profile from list to generate
         profiles.splice(randomIndex, 1);
-        if( profiles.length == 0){
-            console.log("Last profile generated");
-            profileLast();
-            //profiles = JSON.parse(JSON.stringify(originalProfileList));
-        }
+    };
+
+    // To restart the array when the button is clicked.
+    function restartArray(){
+        profiles = JSON.parse(JSON.stringify(originalProfileList));
+        console.log('profiles.length: '+ profiles.length);
+        generateProfile();
+        $('.restartBtn').hide();
+        $('.noBtn').show();
     }
 
     // When document loads, generate a random profile
@@ -158,7 +168,8 @@ $( document ).ready(function() {
 
     // Restart Button
     $(".restartBtn").on('click', function() {
-        originalProfileList()
+       restartArray();
+       console.log('restart working');
     });
 
     // Like Button
