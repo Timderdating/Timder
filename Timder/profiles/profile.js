@@ -43,8 +43,8 @@ $( document ).ready(function() {
         var profileName = lastProfile[0].name;
         var career = lastProfile[0].career;
         $('.carousel-item').addClass('short');
-        $('.noBtn').addClass('displayNone');
-        $('.restartBtn').removeClass('displayNone');
+        $('.noBtn').hide();
+        $('.restartBtn').show();
         $('.restartBtn').addClass('restartCtr');
 
         // Last Picture
@@ -129,26 +129,28 @@ $( document ).ready(function() {
             //profiles = JSON.parse(JSON.stringify(originalProfileList));
         }
 
-        // Randomly select a profile
-        var randomIndex = Math.floor((Math.random() * profiles.length));
-        var randomProfile = profiles[randomIndex].folder;
-        var bioText = profiles[randomIndex].bio;
-        var profileName = profiles[randomIndex].name;
-        var career = profiles[randomIndex].career;
+        else {
+            // Randomly select a profile
+            var randomIndex = Math.floor((Math.random() * profiles.length));
+            var randomProfile = profiles[randomIndex].folder;
+            var bioText = profiles[randomIndex].bio;
+            var profileName = profiles[randomIndex].name;
+            var career = profiles[randomIndex].career;
 
-        // Enter folder of randomly selected profile for images
-        $('img.picture1').attr('src', 'Timder/profiles/'+randomProfile+'/1.jpg');
-        $('img.picture2').attr('src', 'Timder/profiles/'+randomProfile+'/2.jpg');
-        $('img.picture3').attr('src', 'Timder/profiles/'+randomProfile+'/3.jpg');
+            // Enter folder of randomly selected profile for images
+            $('img.picture1').attr('src', 'Timder/profiles/'+randomProfile+'/1.jpg');
+            $('img.picture2').attr('src', 'Timder/profiles/'+randomProfile+'/2.jpg');
+            $('img.picture3').attr('src', 'Timder/profiles/'+randomProfile+'/3.jpg');
 
-        // Display bio and name of corresponding profile
-        $('.bioInfo').text(bioText);
-        $('.profName').text(profileName);
-        $('.career').text(career);
+            // Display bio and name of corresponding profile
+            $('.bioInfo').text(bioText);
+            $('.profName').text(profileName);
+            $('.career').text(career);
 
 
-        // Remove profile from list to generate
-        profiles.splice(randomIndex, 1);
+            // Remove profile from list to generate
+            profiles.splice(randomIndex, 1);
+        }
     };
 
     // To restart the array when the button is clicked.
