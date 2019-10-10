@@ -15,11 +15,11 @@ body.container {
 }
 
 #logo {
-    margin: auto;
-    width: 33%;
     padding-top: 30px;
-    padding-left: 27px;
+    padding-left: 4px;
     padding-bottom: 40px;
+    position: relative;
+    text-align: center;
 }
 
 p {
@@ -159,6 +159,31 @@ p {
 /* End Background Circles CSS */
 
 /* Media Queries */
+
+@media only screen and (max-width: 500px) {
+    #logo {
+        margin: auto;
+        width: 33%;
+        padding-top: 30px;
+        padding-left: 41px;
+        position: relative;
+        right: 92px;
+        padding-bottom: 29px;
+    }
+
+    .textBox {
+        border-color: white;
+        border-radius: 5px;
+        /* background-color: white; */
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
 
 @media only screen and (max-width: 375px) {
     #logo {
