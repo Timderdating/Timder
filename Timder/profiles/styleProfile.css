@@ -95,4 +95,10 @@ h1 {
 .displayNone {
     display: none;
 }
-
+.short {
+  height: 375px;
+}
+.restartCtr {
+  display: block;
+  margin: auto;
+}

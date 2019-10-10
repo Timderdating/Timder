@@ -42,8 +42,10 @@ $( document ).ready(function() {
         var bioText = lastProfile[0].bio;
         var profileName = lastProfile[0].name;
         var career = lastProfile[0].career;
-        //$('#carouselExampleIndicators').addClass('displayNone');
+        $('.carousel-item').addClass('short');
         $('.noBtn').addClass('displayNone');
+        $('.restartBtn').removeClass('displayNone');
+        $('.restartBtn').addClass('restartCtr');
 
         // Last Picture
         $('img.picture1').attr('src', 'Timder/profiles/'+profileEnd+'/1.jpg');
