@@ -60,10 +60,10 @@ $( document ).ready(function() {
 
     // Nested profile array
     var profiles = [{
-        'folder': 'nerdy_tim',
-        'name': 'Nerdy Tim',
-        'career': 'Lvl 69 Dark Mage',
-        'bio': "If you were a triangle you'd be acute one."
+        'folder': 'kim_possible',
+        'name': 'Kim Possible',
+        'career': 'Baby Sitter',
+        'bio': "Call me, beep me, if you wanna reach me."
     },
     {
         'folder': 'tiny_tim',
@@ -118,6 +118,25 @@ $( document ).ready(function() {
         'name': "Tim Kaiba",
         'career': 'Duel Master',
         'bio': "They don't call me Lord of D. for nothing."
+    },
+    {
+        'folder': 'tiff',
+        'name': "Tiffany",
+        'career': 'Queen',
+        'bio': "I'm don't care about how tall you are or what you look like. What really matters is what's inside... your wallet."
+    },
+    {
+        'folder': 'tim_burr',
+        'name': "Tim Burr",
+        'career': 'Lumber Jack',
+        'bio': "I got all the wood you'll ever need."
+
+    },
+    {
+        'folder': 'timothy',
+        'name': "Timothy",
+        'career': 'Retired',
+        'bio': "I just got a hip replacement, can you help me break it in? ;)"
     }];
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
