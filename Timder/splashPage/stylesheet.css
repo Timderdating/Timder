@@ -83,6 +83,7 @@ p {
   position: relative;
   z-index: 1;
   height: 630px; }
+
   @media (max-width: 767.98px) {
     .hero-wrap {
       height: 820px; } }

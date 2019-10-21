@@ -15,8 +15,6 @@ $( document ).ready(function() {
         var profileName = firstProfile[0].name;
         var career = firstProfile[0].career;
 
-        // Hide Restart Button
-        //$('.restartBtn').addClass('displayNone');
 
         // Enter folder of randomly selected profile for images
         $('img.picture1').attr('src', 'Timder/profiles/'+profileOne+'/1.jpg');
@@ -137,6 +135,18 @@ $( document ).ready(function() {
         'name': "Timothy",
         'career': 'Retired',
         'bio': "I just got a hip replacement, can you help me break it in? ;)"
+    },
+    {
+        'folder': 'andrew_yang',
+        'name': "Andrew Yang",
+        'career': 'Yang2020',
+        'bio': "There's an Asian man running for president who wants to give you a thousand dollars a month."
+    },
+    {
+        'folder': 'dog_tim',
+        'name': "Tuff",
+        'career': 'doggo',
+        'bio': "Awoo!"
     }];
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
@@ -191,8 +201,14 @@ $( document ).ready(function() {
 
     // Restart Button
     $(".restartBtn").on('click', function() {
-       restartArray();
-       console.log('restart working');
+        /*$('.mainProfileCard').addClass('fadeOutRight');
+        setTimeout(function(){
+            $('.mainProfileCard').removeClass('fadeOutRight');
+            generateProfile();
+            $('.mainProfileCard').addClass('fadeIn');
+        }, 750);*/
+        restartArray();
+        console.log('restart working');
     });
 
     // Like Button
@@ -204,7 +220,6 @@ $( document ).ready(function() {
         } else {
             $('.mainProfileCard').addClass('fadeOutRight');
              setTimeout(function(){
-                $('.mainProfileCard').removeClass('fadeOutRight');
                 generateProfile();
                 $('.mainProfileCard').addClass('fadeIn');
             }, 750);
