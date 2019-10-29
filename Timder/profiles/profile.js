@@ -219,7 +219,8 @@ $( document ).ready(function() {
             $('#likeModal').modal('show');
         } else {
             $('.mainProfileCard').addClass('fadeOutRight');
-             setTimeout(function(){
+            setTimeout(function(){
+                $('.mainProfileCard').removeClass('fadeOutRight');
                 generateProfile();
                 $('.mainProfileCard').addClass('fadeIn');
             }, 750);
