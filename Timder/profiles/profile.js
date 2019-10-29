@@ -59,7 +59,7 @@ $( document ).ready(function() {
     var profiles = [{
         'folder': 'kim_possible',
         'name': 'Tim Possible',
-        'career': 'Baby Sitter',
+        'career': 'Baby Sitter / Secret Agent',
         'bio': "Call me, beep me, if you wanna reach me."
     },
     {
@@ -71,7 +71,7 @@ $( document ).ready(function() {
     {
         'folder': 'turner_tim',
         'name': 'Timmy Turner',
-        'career': 'Wish Maker',
+        'career': 'Average Kid',
         'bio': "Timmy is an average kid and no one understands. Mom and dad and Vicky always giving him commands."
     },
     {
@@ -94,8 +94,8 @@ $( document ).ready(function() {
     },
     {
         'folder': 'elf_tim',
-        'name': 'Elf Tim',
-        'career': "Santa's Bitch",
+        'name': 'Elf',
+        'career': "On a shelf",
         'bio': "I'll let Santa know if you're naughty or nice"
     },
     {
@@ -106,9 +106,9 @@ $( document ).ready(function() {
     },
     {
         'folder': 'tool_tim',
-        'name': "Tim 'the Tool Man' Taylor",
-        'career': 'Builder',
-        'bio': "I heard your heart's broken, I can fix that."
+        'name': "Tim the Builder",
+        'career': 'You know my cousin Bob',
+        'bio': "I heard your heart is broken, I can fix that."
     },
     {
         'folder': 'yugi_tim',
@@ -118,35 +118,36 @@ $( document ).ready(function() {
     },
     {
         'folder': 'tiff',
-        'name': "Tiffany",
+        'name': "Timberly",
         'career': 'Queen',
-        'bio': "I'm don't care about how tall you are or what you look like. What really matters is what's inside... your wallet."
+        'bio': "I don't care about how tall you are or what you look like. What really matters is what's inside... your wallet."
     },
     {
         'folder': 'tim_burr',
         'name': "Tim Burr",
         'career': 'Lumber Jack',
-        'bio': "I got all the wood you'll ever need."
+        'bio': "You lookin' hella pine. Wood you go on a date with me?"
 
     },
     {
         'folder': 'timothy',
         'name': "Timothy",
         'career': 'Retired',
-        'bio': "I just got a hip replacement, can you help me break it in? ;)"
+        'bio': "I miss my wife."
     },
     {
         'folder': 'andrew_yang',
         'name': "Andrew Yang",
         'career': 'Yang2020',
         'bio': "There's an Asian man running for president who wants to give you a thousand dollars a month. "
-    },
+    }/*,
     {
         'folder': 'dog_tim',
         'name': "Tuff",
         'career': 'doggo',
         'bio': "Awoo!"
-    }];
+    }*/
+    ];
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
 
