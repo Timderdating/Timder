@@ -140,7 +140,7 @@ $( document ).ready(function() {
         'folder': 'andrew_yang',
         'name': "Andrew Yang",
         'career': 'Yang2020',
-        'bio': "There's an Asian man running for president who wants to give you a thousand dollars a month."
+        'bio': "There's an Asian man running for president who wants to give you a thousand dollars a month. "
     },
     {
         'folder': 'dog_tim',
@@ -174,6 +174,12 @@ $( document ).ready(function() {
 
             // Display bio and name of corresponding profile
             $('.bioInfo').text(bioText);
+
+            // If Andrew Yang selected
+            if (profileName.includes("Yang")) {
+                $('.bioInfo').append('<a target="_blank" href="https://www.yang2020.com">YANG 2020</a>');
+            }
+
             $('.profName').text(profileName);
             $('.career').text(career);
 
