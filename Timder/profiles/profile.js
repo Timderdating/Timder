@@ -196,7 +196,7 @@ $( document ).ready(function() {
     function restartArray(){
         profiles = JSON.parse(JSON.stringify(originalProfileList));
         console.log('profiles.length: '+ profiles.length);
-        generateProfile();
+        originalProfile();
         $('.restartBtn').hide();
         $('.tryWrapper').show();
         $('.noBtn').show();
