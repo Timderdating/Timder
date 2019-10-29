@@ -15,10 +15,6 @@ $( document ).ready(function() {
         var profileName = firstProfile[0].name;
         var career = firstProfile[0].career;
 
-        for (var x = 1; x <= 3; x++) {
-            (new Image).src = 'Timder/profiles/'+profileOne+'/'+x+'.jpg';
-        }
-
         // Enter folder of randomly selected profile for images
         $('img.picture1').attr('src', 'Timder/profiles/'+profileOne+'/1.jpg');
         $('img.picture2').attr('src', 'Timder/profiles/'+profileOne+'/2.jpg');
@@ -153,6 +149,14 @@ $( document ).ready(function() {
     }*/];
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
+
+    // Preload images to avoid flickering
+    for (var x = 0; x < profiles.length; x++) {
+        console.log("profiles[x].folder: " + profiles[x].folder);
+        (new Image).src = 'Timder/profiles/'+profiles[x].folder+'/1.jpg';
+        (new Image).src = 'Timder/profiles/'+profiles[x].folder+'/2.jpg';
+        (new Image).src = 'Timder/profiles/'+profiles[x].folder+'/3.jpg';
+    }    
 
     // Generate other Profiles
     function generateProfile(){
