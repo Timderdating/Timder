@@ -59,7 +59,7 @@ $( document ).ready(function() {
     // Nested profile array
     var profiles = [{
         'folder': 'kim_possible',
-        'name': 'Kim Possible',
+        'name': 'Tim Possible',
         'career': 'Baby Sitter',
         'bio': "Call me, beep me, if you wanna reach me."
     },
