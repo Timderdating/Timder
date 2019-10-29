@@ -213,9 +213,9 @@ $( document ).ready(function() {
         $('.mainProfileCard').addClass('fadeOutRight');
         setTimeout(function(){
             $('.mainProfileCard').removeClass('fadeOutRight');
+            restartArray();
             $('.mainProfileCard').addClass('fadeIn');
         }, 750);
-        restartArray();
         console.log('restart working');
     });
 
