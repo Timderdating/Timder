@@ -15,6 +15,9 @@ $( document ).ready(function() {
         var profileName = firstProfile[0].name;
         var career = firstProfile[0].career;
 
+        for (var x = 1; x <= 3; x++) {
+            (new Image).src = 'Timder/profiles/'+profileOne+'/'+x+'.jpg';
+        }
 
         // Enter folder of randomly selected profile for images
         $('img.picture1').attr('src', 'Timder/profiles/'+profileOne+'/1.jpg');
