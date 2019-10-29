@@ -71,7 +71,7 @@ $( document ).ready(function() {
         'name': 'Tiny Tim',
         'career': 'Orphan',
         'bio': "God bless us! Every one!"
-    },
+    }/*,
     {
         'folder': 'turner_tim',
         'name': 'Timmy Turner',
@@ -150,7 +150,7 @@ $( document ).ready(function() {
         'name': "Tuff",
         'career': 'doggo',
         'bio': "Awoo!"
-    }];
+    }*/];
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
 
@@ -210,12 +210,11 @@ $( document ).ready(function() {
 
     // Restart Button
     $(".restartBtn").on('click', function() {
-        /*$('.mainProfileCard').addClass('fadeOutRight');
+        $('.mainProfileCard').addClass('fadeOutRight');
         setTimeout(function(){
             $('.mainProfileCard').removeClass('fadeOutRight');
-            generateProfile();
             $('.mainProfileCard').addClass('fadeIn');
-        }, 750);*/
+        }, 750);
         restartArray();
         console.log('restart working');
     });
