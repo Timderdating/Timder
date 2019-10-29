@@ -67,7 +67,7 @@ $( document ).ready(function() {
         'name': 'Tiny Tim',
         'career': 'Orphan',
         'bio': "God bless us! Every one!"
-    }/*,
+    },
     {
         'folder': 'turner_tim',
         'name': 'Timmy Turner',
@@ -146,7 +146,7 @@ $( document ).ready(function() {
         'name': "Tuff",
         'career': 'doggo',
         'bio': "Awoo!"
-    }*/];
+    }];
 
     var originalProfileList = JSON.parse(JSON.stringify(profiles));
 
