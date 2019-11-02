@@ -5,7 +5,7 @@ $( document ).ready(function() {
         'folder': 'normal_tim',
         'name': 'Tim Huynh',
         'career': 'Web Developer',
-        'bio': "I make aggressively medium bank."
+        'bio': "The other guys on this dating app are losers."
     }];
 
     // Generate first profile
@@ -31,7 +31,7 @@ $( document ).ready(function() {
         'folder': 'last_profile',
         'name': 'Sadness',
         'career': 'Loneliness',
-        'bio': "You've reached the end. There aren't anymore fish in this pond. I hope you found someone you liked. If you didn't, then keep your standards high! You deserve the best, never settle for a Magikarp when you can catch a Gyarados!"
+        'bio': "Welp, looks like you're going to end up alone. Or not! Why don't you try these other set of profiles?"
     }];
 
     function profileLast(){
@@ -78,7 +78,7 @@ $( document ).ready(function() {
         'folder': 'kpop_tim',
         'name': '티모시',
         'career': 'K-POP Idol',
-        'bio': "I'm so sick of this fake love."
+        'bio': "I could be your Seoul mate."
     },
     {
         'folder': 'bat_tim',
@@ -96,13 +96,13 @@ $( document ).ready(function() {
         'folder': 'elf_tim',
         'name': 'Elf',
         'career': "On a shelf",
-        'bio': "I'll let Santa know if you're naughty or nice"
+        'bio': "I'll let Santa know if you're naughty or nice."
     },
     {
         'folder': 'hostage_tim',
         'name': 'Hostage Tim',
         'career': 'Just an innocent guy',
-        'bio': "For the love of God please like! He's not gonna let me go! I haven't had rice in days!!"
+        'bio': "For the love of God please like! He's not gonna let me go!"
     },
     {
         'folder': 'tool_tim',
@@ -119,8 +119,8 @@ $( document ).ready(function() {
     {
         'folder': 'tiff',
         'name': "Timberly",
-        'career': 'Queen',
-        'bio': "I don't care about how tall you are or what you look like. What really matters is what's inside... your wallet."
+        'career': 'YAS QUEEN',
+        'bio': "I heard you like bad girls. I'm bad at everything."
     },
     {
         'folder': 'tim_burr',
