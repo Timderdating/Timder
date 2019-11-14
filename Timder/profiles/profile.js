@@ -61,7 +61,7 @@ $( document ).ready(function() {
         'folder': 'tiny_tim',
         'name': 'Tiny Tim',
         'career': 'Orphan',
-        'bio': "God bless us! Every one!"
+        'bio': "Big things come in small packages."
     },
     {
         'folder': 'turner_tim',
@@ -73,7 +73,7 @@ $( document ).ready(function() {
         'folder': 'kpop_tim',
         'name': '티모시',
         'career': 'K-POP Idol',
-        'bio': "I could be your Seoul mate."
+        'bio': "I can give you a big bang. My favorite position is T.O.P."
     },
     {
         'folder': 'bat_tim',
@@ -114,14 +114,14 @@ $( document ).ready(function() {
     {
         'folder': 'tiff',
         'name': "Timberly",
-        'career': 'YAS QUEEN',
+        'career': 'QUEEN',
         'bio': "I heard you like bad girls. I'm bad at everything."
     },
     {
         'folder': 'tim_burr',
         'name': "Tim Burr",
         'career': 'Lumber Jack',
-        'bio': "You lookin' hella pine. Wood you go on a date with me?"
+        'bio': "I got all the wood you'll ever need."
 
     },
     {
