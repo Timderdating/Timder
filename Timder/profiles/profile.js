@@ -61,7 +61,7 @@ $( document ).ready(function() {
         'folder': 'tiny_tim',
         'name': 'Tiny Tim',
         'career': 'Orphan',
-        'bio': "Big things come in small packages."
+        'bio': "Big things come in tiny packages."
     },
     {
         'folder': 'turner_tim',
