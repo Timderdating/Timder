@@ -56,12 +56,7 @@ $( document ).ready(function() {
     }
 
     // Nested profile array
-    var profiles = [{
-        'folder': 'kim_possible',
-        'name': 'Tim Possible',
-        'career': 'Baby Sitter / Secret Agent',
-        'bio': "Call me, beep me, if you wanna reach me."
-    },
+    var profiles = [
     {
         'folder': 'tiny_tim',
         'name': 'Tiny Tim',
@@ -157,7 +152,7 @@ $( document ).ready(function() {
         (new Image).src = 'Timder/profiles/'+profiles[x].folder+'/1.jpg';
         (new Image).src = 'Timder/profiles/'+profiles[x].folder+'/2.jpg';
         (new Image).src = 'Timder/profiles/'+profiles[x].folder+'/3.jpg';
-    }    
+    }
 
     // Generate other Profiles
     function generateProfile(){
